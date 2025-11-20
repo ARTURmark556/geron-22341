@@ -1,0 +1,16 @@
+{
+  "name": "geron-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "node-sass": "sass -w assets/scss/:assets/css/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "sass": "1.94.2"
+  }
+}
