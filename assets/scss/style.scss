@@ -1,4 +1,113 @@
-$back: red;
-body {
-  background-color: $back;
+@import  'fonts' ;
+@import  'reset' ;
+
+$main: #ff3d00;
+$second: black;
+$gray: gray;
+$Darkgray: #333333;
+$sale: #4caf50;
+$lightgray: #d7d2d2;
+$back: #ffffff;
+a {
+  @include font(700); 
+  text-transform: uppercase;
+      color: $second;
+      margin-right:   20px;
+      transition: 0.4ms;
+
+&:hover {
+    color: $main;
+    transition: 0.4ms;
+  }
+
+
 }
+@mixin font($size) {
+  font-family: 'Montserrat';
+  font-weight: $size;
+}
+
+@mixin btn($color){
+  border: 1px solid $main;
+  color: $main;
+  width: 100%;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 10px 0;
+  text-align: center;
+  @include font(900)
+  
+ 
+}
+
+@mixin activeBtn($color) {
+  
+  background-color: $color;
+  color: $color;
+}
+
+.btn {
+    @include btn($main);
+
+}
+
+.btn:hover {
+  @include activeBtn($main);
+}
+
+.btn.second.active {
+  @include activeBtn($main);
+}
+
+h1, h2, h3, h4 {
+  @include font(900)
+}
+ h1 {
+  font-size: 20px;
+ }
+
+ h2 {
+  font-size: 16px;
+ }
+
+ h3 {
+  font-size: 14px;
+ }
+
+ h4 {
+  font-size: 12px;
+ }
+ 
+  p {
+  @include font(400)
+}
+
+svg {
+  fill: $main;
+  transition: 0.4ms;
+  &:hover {
+    transition: 0.4ms;
+    fill: $main;
+  }
+}
+.card {
+  background: $back;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  &-content {
+    padding: 10px;
+  }
+}
+
+section {
+  margin-bottom: 80px;
+}
+
+.page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+  
