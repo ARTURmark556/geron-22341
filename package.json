@@ -2,15 +2,25 @@
   "name": "geron-1",
   "version": "1.0.0",
   "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/ARTURmark556/geron-22341#readme",
+  "bugs": {
+    "url": "https://github.com/ARTURmark556/geron-22341/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ARTURmark556/geron-22341.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "node-sass": "sass -w assets/scss/:assets/css/"
+    "dev": "sass -w assets/scss/:assets/css/"
+    
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
     "sass": "1.94.2"
-  }
+  },
+  "devDependencies": {}
 }

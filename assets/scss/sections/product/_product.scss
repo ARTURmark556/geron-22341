@@ -1,0 +1,11 @@
+.product{
+    &-title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;     
+        background-color: $main-orange;
+        padding: 30px 0;
+        text-transform: uppercase;
+    }
+}
